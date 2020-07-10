@@ -118,6 +118,7 @@ Follow [these instructions](./ios_push.md) to enable push for iOS.
     * [.isPushEnabled()](#MCReactModule.isPushEnabled) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.enablePush()](#MCReactModule.enablePush)
     * [.disablePush()](#MCReactModule.disablePush)
+    * [.setSystemToken()](#MCReactModule.setSystemToken)
     * [.getSystemToken()](#MCReactModule.getSystemToken) ⇒ <code>Promise.&lt;?string&gt;</code>
     * [.getAttributes()](#MCReactModule.getAttributes) ⇒ <code>Promise.&lt;Object.&lt;string, string&gt;&gt;</code>
     * [.setAttribute(key, value)](#MCReactModule.setAttribute)
@@ -166,6 +167,18 @@ Disables push messaging in the native Marketing Cloud SDK.
 
 - [Android Docs](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-Android/javadocs/6.0/reference/com/salesforce/marketingcloud/messages/push/PushMessageManager.html#disablePush())
 - [iOS Docs](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledoc/Classes/MarketingCloudSDK.html#//api/name/sfmc_setPushEnabled:)
+
+<a name="MCReactModule.setSystemToken"></a>
+
+### MCReactModule.setSystemToken()</code>
+Sets the token used by the Marketing Cloud to send push messages to
+the device.
+
+**Kind**: static method of [<code>MCReactModule</code>](#MCReactModule)
+**See**
+
+- [Android Docs](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-Android/javadocs/6.0/reference/com/salesforce/marketingcloud/messages/push/Push$
+- [iOS Docs](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledoc/Classes/MarketingCloudSDK.html#//api/name/sfmc_setDeviceToken:)
 
 <a name="MCReactModule.getSystemToken"></a>
 

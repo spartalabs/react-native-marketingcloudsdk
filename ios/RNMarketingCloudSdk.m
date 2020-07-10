@@ -67,6 +67,10 @@ RCT_EXPORT_METHOD(enablePush) { [[MarketingCloudSDK sharedInstance] sfmc_setPush
 
 RCT_EXPORT_METHOD(disablePush) { [[MarketingCloudSDK sharedInstance] sfmc_setPushEnabled:NO]; }
 
+RCT_EXPORT_METHOD(setSystemToken : (NSString *_Nonnull)token) {
+    [[MarketingCloudSDK sharedInstance] sfmc_setDeviceToken:token];
+}
+
 RCT_EXPORT_METHOD(getSystemToken
                   : (RCTPromiseResolveBlock)resolve rejecter
                   : (RCTPromiseRejectBlock)reject) {
