@@ -28,6 +28,7 @@ package com.salesforce.marketingcloud.reactnative;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import android.annotation.SuppressLint;
 import android.util.Log;
 
 import com.facebook.react.bridge.Arguments;
@@ -89,6 +90,7 @@ public class RNMarketingCloudSdkModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void enableGeofence() {
         handleAction(new Action() {
+            @SuppressLint("MissingPermission")
             @Override
             void execute(MarketingCloudSdk sdk) {
                 sdk.getRegionMessageManager().enableGeofenceMessaging();
