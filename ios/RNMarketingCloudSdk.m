@@ -67,7 +67,7 @@ RCT_EXPORT_METHOD(enablePush) { [[MarketingCloudSDK sharedInstance] sfmc_setPush
 
 RCT_EXPORT_METHOD(disablePush) { [[MarketingCloudSDK sharedInstance] sfmc_setPushEnabled:NO]; }
 
-RCT_EXPORT_METHOD(enableGeofence {
+RCT_EXPORT_METHOD(enableGeofence) {
     [[MarketingCloudSDK sharedInstance] sfmc_startWatchingLocation];
 }
 
