@@ -98,6 +98,18 @@ public class RNMarketingCloudSdkModule extends ReactContextBaseJavaModule {
         });
     }
 
+
+    @ReactMethod
+    public void disableGeofence() {
+        handleAction(new Action() {
+            @SuppressLint("MissingPermission")
+            @Override
+            void execute(MarketingCloudSdk sdk) {
+                sdk.getRegionMessageManager().disableGeofenceMessaging();
+            }
+        });
+    }
+
     @ReactMethod
     public void setSystemToken(final String token) {
         handleAction(new Action() {

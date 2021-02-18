@@ -71,6 +71,10 @@ RCT_EXPORT_METHOD(enableGeofence) {
     [[MarketingCloudSDK sharedInstance] sfmc_startWatchingLocation];
 }
 
+RCT_EXPORT_METHOD(disableGeofence) {
+    [[MarketingCloudSDK sharedInstance] sfmc_stopWatchingLocation];
+}
+
 RCT_EXPORT_METHOD(setSystemToken : (NSString *_Nonnull)token) {
     [[MarketingCloudSDK sharedInstance] sfmc_setDeviceToken:token];
 }

@@ -201,6 +201,18 @@ Enable geofence messaging on iOS and Android devices.
 - [Android Docs](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-Android/location/geolocation.html)
 - [iOS Docs](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/location/geolocation-overview.html)
 
+<a name="MCReactModule.disableGeofence"></a>
+
+### MCReactModule.disableGeofence()</code>
+
+Disable geofence messaging on iOS and Android devices.
+
+**Kind**: static method of [<code>MCReactModule</code>](#MCReactModule)
+**See**
+
+- [Android Docs](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-Android/location/geolocation.html)
+- [iOS Docs](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/location/geolocation-overview.html)
+
 <a name="MCReactModule.getSystemToken"></a>
 
 ### MCReactModule.getSystemToken() ⇒ <code>Promise.&lt;?string&gt;</code>
